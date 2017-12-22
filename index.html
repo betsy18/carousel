@@ -11,12 +11,32 @@
 
 <body>
     <section>
-        <div class="carousel-content">
-            <img src="assets/img/1.jpg" alt=img1"">
+        <div data-slide = "0" class="carousel-content active">
+            <img src="assets/images/1.jpg" alt=img1"">
+        </div>
+        <div data-slide = "1" class="carousel-content">
+            <img src="assets/images/2.jpg" alt=img2"">
+        </div>
+        <div data-slide = "2" class="carousel-content">
+            <img src="assets/images/3.jpg" alt=img3"">
+        </div>
+        <div data-slide = "3" class="carousel-content">
+            <img src="assets/images/4.jpg" alt=img4"">
+        </div>
+        <div data-slide = "4" class="carousel-content">
+            <img src="assets/images/5.jpg" alt=img5"">
         </div>
     </section>
 
-    <section></section>
+    <section>
+        <a href="#" class="previus active"></a>
+        <button data-target = "0" class="control"></button>
+        <button data-target = "1" class="control"></button>
+        <button data-target = "2" class="control"></button>
+        <button data-target = "3" class="control"></button>
+        <button data-target = "4" class="control"></button>
+        <a href="#" class="next"></a>
+    </section>
 
     <script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
