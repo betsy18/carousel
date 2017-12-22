@@ -9,8 +9,8 @@ function loadPage() {
 
   //   eventos
   $buttons.click(changeImage);
-  $previus.keypress(previusImage);
-  $next.keypress(nextImage);
+  $previus.click(previusImage);
+  $next.click(nextImage);
 }
 
 function changeImage() {
@@ -27,8 +27,9 @@ function previusImage(e) {
 
 function nextImage(e) {
   e.preventDefault();
-  target = target - 1;
-  target = (target > 4) ? 0 : target;
+  target = ( target < target - 1) ? target * 1 + 1 : 0;
+//   target = target - 1;
+//   target = (target > 4) ? 0 : target;
   showImage(target);
 }
 
